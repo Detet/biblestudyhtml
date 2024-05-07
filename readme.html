@@ -1,0 +1,1516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+  @font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #24292e;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #032f62;
+}
+
+.markdown-body .pl-smw,
+.markdown-body .pl-v {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b31d28;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2 {
+  background-color: #d73a49;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2:before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #22863a;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #005cc5;
+  font-weight: 700;
+}
+
+.markdown-body .pl-mi {
+  color: #24292e;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #24292e;
+  font-weight: 700;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffeef0;
+  color: #b31d28;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #f0fff4;
+  color: #22863a;
+}
+
+.markdown-body .pl-mc {
+  background-color: #ffebda;
+  color: #e36209;
+}
+
+.markdown-body .pl-mi2 {
+  background-color: #005cc5;
+  color: #f6f8fa;
+}
+
+.markdown-body .pl-mdr {
+  color: #6f42c1;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  color: #032f62;
+  text-decoration: underline;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.markdown-body hr:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body hr:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+}
+
+.markdown-body p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.markdown-body .border {
+  border: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .border-0 {
+  border: 0!important;
+}
+
+.markdown-body .border-bottom {
+  border-bottom: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .rounded-1 {
+  border-radius: 3px!important;
+}
+
+.markdown-body .bg-white {
+  background-color: #fff!important;
+}
+
+.markdown-body .bg-gray-light {
+  background-color: #fafbfc!important;
+}
+
+.markdown-body .text-gray-light {
+  color: #6a737d!important;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-bottom: 8px!important;
+  margin-top: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-bottom: 0!important;
+  padding-top: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-bottom: 8px!important;
+  padding-top: 8px!important;
+}
+
+.markdown-body .pl-3,
+.markdown-body .px-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .px-3 {
+  padding-right: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .f6 {
+  font-size: 12px!important;
+}
+
+.markdown-body .lh-condensed {
+  line-height: 1.25!important;
+}
+
+.markdown-body .text-bold {
+  font-weight: 600!important;
+}
+
+.markdown-body:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.markdown-body hr {
+  background-color: #e1e4e8;
+  border: 0;
+  height: .25em;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.markdown-body blockquote {
+  border-left: .25em solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+  color: #444d56;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: .3em;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  color: #6a737d;
+  font-size: .85em;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.markdown-body dl dd {
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+.markdown-body table {
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  background-color: #fff;
+  box-sizing: content-box;
+  max-width: 100%;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  padding: .2em .4em;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  word-break: normal;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+.markdown-body pre code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  max-width: auto;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+}
+
+.markdown-body .commit-tease-sha {
+  color: #444d56;
+  display: inline-block;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 90%;
+}
+
+.markdown-body .blob-wrapper {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.markdown-body .blob-wrapper-embedded {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.markdown-body .blob-num {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  color: rgba(27,31,35,.3);
+  cursor: pointer;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  line-height: 20px;
+  min-width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+
+.markdown-body .blob-num:before {
+  content: attr(data-line-number);
+}
+
+.markdown-body .blob-code {
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  vertical-align: top;
+}
+
+.markdown-body .blob-code-inner {
+  color: #24292e;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  overflow: visible;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  background: #ffea7f;
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+  color: #444d56;
+  display: inline-block;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body :checked+.radio-label {
+  border-color: #0366d6;
+  position: relative;
+  z-index: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="1"] {
+  -moz-tab-size: 1;
+  tab-size: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="2"] {
+  -moz-tab-size: 2;
+  tab-size: 2;
+}
+
+.markdown-body .tab-size[data-tab-size="3"] {
+  -moz-tab-size: 3;
+  tab-size: 3;
+}
+
+.markdown-body .tab-size[data-tab-size="4"] {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.markdown-body .tab-size[data-tab-size="5"] {
+  -moz-tab-size: 5;
+  tab-size: 5;
+}
+
+.markdown-body .tab-size[data-tab-size="6"] {
+  -moz-tab-size: 6;
+  tab-size: 6;
+}
+
+.markdown-body .tab-size[data-tab-size="7"] {
+  -moz-tab-size: 7;
+  tab-size: 7;
+}
+
+.markdown-body .tab-size[data-tab-size="8"] {
+  -moz-tab-size: 8;
+  tab-size: 8;
+}
+
+.markdown-body .tab-size[data-tab-size="9"] {
+  -moz-tab-size: 9;
+  tab-size: 9;
+}
+
+.markdown-body .tab-size[data-tab-size="10"] {
+  -moz-tab-size: 10;
+  tab-size: 10;
+}
+
+.markdown-body .tab-size[data-tab-size="11"] {
+  -moz-tab-size: 11;
+  tab-size: 11;
+}
+
+.markdown-body .tab-size[data-tab-size="12"] {
+  -moz-tab-size: 12;
+  tab-size: 12;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .pl-7 {
+  padding-left: 48px!important;
+}
+
+.markdown-body .pl-8 {
+  padding-left: 64px!important;
+}
+
+.markdown-body .pl-9 {
+  padding-left: 80px!important;
+}
+
+.markdown-body .pl-10 {
+  padding-left: 96px!important;
+}
+
+.markdown-body .pl-11 {
+  padding-left: 112px!important;
+}
+
+.markdown-body .pl-12 {
+  padding-left: 128px!important;
+}
+
+/*# sourceURL=webpack://./node_modules/github-markdown-css/github-markdown.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9naXRodWItbWFya2Rvd24tY3NzL2dpdGh1Yi1tYXJrZG93bi5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSwwQkFBMEI7RUFDMUIsMkRBQXF0RTtBQUN2dEU7O0FBRUE7RUFDRSxxQkFBcUI7RUFDckIsa0JBQWtCO0VBQ2xCLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxjQUFjO0VBQ2Qsa0JBQWtCO0VBQ2xCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTs7Ozs7O0VBTUUsY0FBYztFQUNkLHNCQUFzQjtFQUN0QixrQkFBa0I7QUFDcEI7O0FBRUE7Ozs7OztFQU1FLHFCQUFxQjtBQUN2Qjs7QUFFQTs7Ozs7O0VBTUUsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsMEJBQTBCO0VBQzFCLDhCQUE4QjtFQUM5QixjQUFjO0VBQ2QsZ0JBQWdCO0VBQ2hCLGtJQUFrSTtFQUNsSSxlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7O0VBRUUsY0FBYztBQUNoQjs7QUFFQTs7RUFFRSxjQUFjO0FBQ2hCOztBQUVBOztFQUVFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTs7Ozs7OztFQU9FLGNBQWM7QUFDaEI7O0FBRUE7O0VBRUUsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIsY0FBYztBQUNoQjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0UsY0FBYztFQUNkLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7OztFQUdFLGNBQWM7RUFDZCxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFD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 */
+  </style>
+  <style>
+  /**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #9a6e3a;
+	/* This background color was intended by the author of this theme. */
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function,
+.token.class-name {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+/*# sourceURL=webpack://./node_modules/prismjs/themes/prism.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9wcmlzbWpzL3RoZW1lcy9wcmlzbS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7RUFJRTs7QUFFRjs7Q0FFQyxZQUFZO0NBQ1osZ0JBQWdCO0NBQ2hCLHdCQUF3QjtDQUN4QixzRUFBc0U7Q0FDdEUsY0FBYztDQUNkLGdCQUFnQjtDQUNoQixnQkFBZ0I7Q0FDaEIsb0JBQW9CO0NBQ3BCLGtCQUFrQjtDQUNsQixpQkFBaUI7Q0FDakIsZ0JBQWdCOztDQUVoQixnQkFBZ0I7Q0FDaEIsY0FBYztDQUNkLFdBQVc7O0NBRVgscUJBQXFCO0NBQ3JCLGtCQUFrQjtDQUNsQixpQkFBaUI7Q0FDakIsYUFBYTtBQUNkOztBQUVBOztDQUVDLGlCQUFpQjtDQUNqQixtQkFBbUI7QUFDcEI7O0FBRUE7O0NBRUMsaUJBQWlCO0NBQ2pCLG1CQUFtQjtBQUNwQjs7QUFFQTtDQUNDOztFQUVDLGlCQUFpQjtDQUNsQjtBQUNEOztBQUVBLGdCQUFnQjtBQUNoQjtDQUNDLFlBQVk7Q0FDWixjQUFjO0NBQ2QsY0FBYztBQUNmOztBQUVBOztDQUVDLG1CQUFtQjtBQUNwQjs7QUFFQSxnQkFBZ0I7QUFDaEI7Q0FDQyxhQUFhO0NBQ2IsbUJBQW1CO0NBQ25CLG1CQUFtQjtBQUNwQjs7QUFFQTs7OztDQUlDLGdCQUFnQjtBQUNqQjs7QUFFQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTs7Ozs7OztDQU9DLFdBQVc7QUFDWjs7QUFFQTs7Ozs7O0NBTUMsV0FBVztBQUNaOztBQUVBOzs7OztDQUtDLGNBQWM7Q0FDZCxvRUFBb0U7Q0FDcEUsaUNBQWlDO0FBQ2xDOztBQUVBOzs7Q0FHQyxXQUFXO0FBQ1o7O0FBRUE7O0NBRUMsY0FBYztBQUNmOztBQUVBOzs7Q0FHQyxXQUFXO0FBQ1o7O0FBRUE7O0NBRUMsaUJBQWlCO0FBQ2xCO0FBQ0E7Q0FDQyxrQkFBa0I7QUFDbkI7O0FBRUE7Q0FDQyxZQUFZO0FBQ2IiLCJzb3VyY2VSb290IjoiIn0= */
+  </style>
+  <style>
+  
+  </style>
+  <style>
+    .markdown-body {
+      font-family: -apple-system,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+
+    @media not print {
+      .markdown-body {
+        padding: 45px;
+      }
+
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+    }
+
+    .hf-container {
+      color: #24292e;
+      line-height: 1.3;
+    }
+
+    .markdown-body .highlight pre,
+    .markdown-body pre {
+      white-space: pre-wrap;
+    }
+    .markdown-body table {
+      display: table;
+    }
+    .markdown-body img[data-align="center"] {
+      display: block;
+      margin: 0 auto;
+    }
+    .markdown-body img[data-align="right"] {
+      display: block;
+      margin: 0 0 0 auto;
+    }
+    .markdown-body li.task-list-item {
+      list-style-type: none;
+    }
+    .markdown-body li > [type=checkbox] {
+      margin: 0 0 0 -1.3em;
+    }
+    .markdown-body input[type="checkbox"] ~ p {
+      margin-top: 0;
+      display: inline-block;
+    }
+    .markdown-body ol ol,
+    .markdown-body ul ol {
+      list-style-type: decimal;
+    }
+    .markdown-body ol ol ol,
+    .markdown-body ol ul ol,
+    .markdown-body ul ol ol,
+    .markdown-body ul ul ol {
+      list-style-type: decimal;
+    }
+  </style>
+  <style>.markdown-body a.footnote-ref {
+  text-decoration: none;
+}
+
+.footnotes {
+  font-size: .85em;
+  opacity: .8;
+}
+
+.footnotes li[role="doc-endnote"] {
+  position: relative;
+}
+
+.footnotes .footnote-back {
+  position: absolute;
+  font-family: initial;
+  top: .2em;
+  right: 1em;
+  text-decoration: none;
+}
+
+.inline-math.invalid,
+.multiple-math.invalid {
+  color: rgb(255, 105, 105);
+}
+
+.toc-container {
+  width: 100%;
+}
+
+.toc-container .toc-title {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+.toc-container li,
+.toc-container ul,
+.toc-container ul li {
+  list-style: none !important;
+}
+
+.toc-container > ul {
+  padding-left: 0;
+}
+
+.toc-container ul li span {
+  display : flex;
+}
+
+.toc-container ul li span a {
+  color: inherit;
+  text-decoration: none;
+}
+.toc-container ul li span a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.toc-container ul li span span.dots {
+  flex: 1;
+  height: 0.65em;
+  margin: 0 10px;
+  border-bottom: 2px dotted black;
+}
+
+/*# sourceURL=webpack://./src/muya/lib/assets/styles/exportStyle.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9tdXlhL2xpYi9hc3NldHMvc3R5bGVzL2V4cG9ydFN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsb0JBQW9CO0VBQ3BCLFNBQVM7RUFDVCxVQUFVO0VBQ1YscUJBQXFCO0FBQ3ZCOztBQUVBOztFQUVFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixnQkFBZ0I7RUFDaEIsZ0JBQWdCO0FBQ2xCOztBQUVBOzs7RUFHRSwyQkFBMkI7QUFDN0I7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7QUFDQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSxPQUFPO0VBQ1AsY0FBYztFQUNkLGNBQWM7RUFDZCwrQkFBK0I7QUFDakMiLCJzb3VyY2VSb290IjoiIn0= */</style>
+  <style>.markdown-body{}pre.front-matter{display:none!important;}</style>
+</head>
+<body>
+  <article class="markdown-body"><h1 class="atx" id="detetand39s-bible-study-from-years-ago">Detet's Bible Study (from years ago)</h1>
+<p>This is my thorough Bible study I made years ago, although it was in Swedish. With AI I could easily fix a translated English version of the selected passages. Let me know if there is any link that is faulty or passage that is not correct (as AI can hallucinate, however, you should be able to discern if it does. AI is not a literary genius like the authors of these timeless texts.)</p>
+<h4 class="atx" id="hebrews-36"><a href="https://www.biblegateway.com/passage/?search=Hebrews+3%3A6&amp;version=NIV">Hebrews 3:6</a></h4>
+<p>"But Christ is faithful as the Son over God's house. And we are his house, if indeed we hold firmly to our confidence and the hope in which we glory."</p>
+<h4 class="atx" id="psalm-911-16"><a href="https://www.biblegateway.com/passage/?search=Psalm+91%3A1-16&amp;version=NIV">Psalm 91:1-16</a></h4>
+<p>"Whoever dwells in the shelter of the Most High will rest in the shadow of the Almighty. I will say of the Lord, 'He is my refuge and my fortress, my God, in whom I trust.' ... 'Because he loves me,' says the Lord, 'I will rescue him; I will protect him, for he acknowledges my name. He will call on me, and I will answer him; I will be with him in trouble, I will deliver him and honor him. With long life I will satisfy him and show him my salvation.'"</p>
+<h4 class="atx" id="psalm-8916-18"><a href="https://www.biblegateway.com/passage/?search=Psalm+89%3A16-18&amp;version=NIV">Psalm 89:16-18</a></h4>
+<p>"They rejoice in your name all day long; they celebrate your righteousness. For you are their glory and strength, and by your favor you exalt our horn. Indeed, our shield belongs to the Lord, our king to the Holy One of Israel."</p>
+<h4 class="atx" id="matthew-1624-25"><a href="https://www.biblegateway.com/passage/?search=Matthew+16%3A24-25&amp;version=NIV">Matthew 16:24-25</a></h4>
+<p>"Then Jesus said to his disciples, 'Whoever wants to be my disciple must deny themselves and take up their cross and follow me. For whoever wants to save their life will lose it, but whoever loses their life for me will find it.'"</p>
+<h4 class="atx" id="2-timothy-223-26"><a href="https://www.biblegateway.com/passage/?search=2+Timothy+2%3A23-26&amp;version=NIV">2 Timothy 2:23-26</a></h4>
+<p>"Don't have anything to do with foolish and stupid arguments, because you know they produce quarrels. And the Lord's servant must not be quarrelsome but must be kind to everyone, able to teach, not resentful. Opponents must be gently instructed, in the hope that God will grant them repentance leading them to a knowledge of the truth, and that they will come to their senses and escape from the trap of the devil, who has taken them captive to do his will."</p>
+<h4 class="atx" id="1-corinthians-1521-22"><a href="https://www.biblegateway.com/passage/?search=1+Corinthians+15%3A21-22&amp;version=NIV">1 Corinthians 15:21-22</a></h4>
+<p>"For since death came through a man, the resurrection of the dead comes also through a man. For as in Adam all die, so in Christ all will be made alive."</p>
+<h4 class="atx" id="philippians-48"><a href="https://www.biblegateway.com/passage/?search=Philippians+4%3A8&amp;version=NIV">Philippians 4:8</a></h4>
+<p>"Finally, brothers and sisters, whatever is true, whatever is noble, whatever is right, whatever is pure, whatever is lovely, whatever is admirable—if anything is excellent or praiseworthy—think about such things."</p>
+<h4 class="atx" id="philippians-45"><a href="https://www.biblegateway.com/passage/?search=Philippians+4%3A5&amp;version=NIV">Philippians 4:5</a></h4>
+<p>"Let your gentleness be evident to all. The Lord is near."</p>
+<h4 class="atx" id="john-663"><a href="https://www.biblegateway.com/passage/?search=John+6%3A63&amp;version=NIV">John 6:63</a></h4>
+<p>"The Spirit gives life; the flesh counts for nothing. The words I have spoken to you—they are full of the Spirit and life."</p>
+<h4 class="atx" id="1-corinthians-61-20"><a href="https://www.biblegateway.com/passage/?search=1+Corinthians+6%3A1-20&amp;version=NIV">1 Corinthians 6:1-20</a></h4>
+<p>"If any of you has a dispute with another, do you dare to take it before the ungodly for judgment instead of before the Lord's people? ... Do you not know that your bodies are temples of the Holy Spirit, who is in you, whom you have received from God? You are not your own; you were bought at a price. Therefore honor God with your bodies."</p>
+<h4 class="atx" id="ephesians-117-18"><a href="https://www.biblegateway.com/passage/?search=Ephesians+1%3A17-18&amp;version=NIV">Ephesians 1:17-18</a></h4>
+<p>"I keep asking that the God of our Lord Jesus Christ, the glorious Father, may give you the Spirit of wisdom and revelation, so that you may know him better. I pray that the eyes of your heart may be enlightened in order that you may know the hope to which he has called you, the riches of his glorious inheritance in his holy people."</p>
+<h4 class="atx" id="philippians-23"><a href="https://www.biblegateway.com/passage/?search=Philippians+2%3A3&amp;version=NIV">Philippians 2:3</a></h4>
+<p>"Do nothing out of selfish ambition or vain conceit. Rather, in humility value others above yourselves."</p>
+<h4 class="atx" id="romans-211"><a href="https://www.biblegateway.com/passage/?search=Romans+2%3A11&amp;version=NIV">Romans 2:11</a></h4>
+<p>"For God does not show favoritism."</p>
+<h4 class="atx" id="isaiah-263-4"><a href="https://www.biblegateway.com/passage/?search=Isaiah+26%3A3-4&amp;version=NIV">Isaiah 26:3-4</a></h4>
+<p>"You will keep in perfect peace those whose minds are steadfast, because they trust in you. Trust in the Lord forever, for the Lord, the Lord himself, is the Rock eternal."</p>
+<h4 class="atx" id="galatians-219-20"><a href="https://www.biblegateway.com/passage/?search=Galatians+2%3A19-20&amp;version=NIV">Galatians 2:19-20</a></h4>
+<p>"For through the law I died to the law so that I might live for God. I have been crucified with Christ and I no longer live, but Christ lives in me. The life I now live in the body, I live by faith in the Son of God, who loved me and gave himself for me."</p>
+<h4 class="atx" id="proverbs-2015"><a href="https://www.biblegateway.com/passage/?search=Proverbs+20%3A15&amp;version=NIV">Proverbs 20:15</a></h4>
+<p>"Gold there is, and rubies in abundance, but lips that speak knowledge are a rare jewel."</p>
+<h4 class="atx" id="proverbs-2013"><a href="https://www.biblegateway.com/passage/?search=Proverbs+20%3A13&amp;version=NIV">Proverbs 20:13</a></h4>
+<p>"Do not love sleep or you will grow poor; stay awake and you will have food to spare."</p>
+<h4 class="atx" id="proverbs-204"><a href="https://www.biblegateway.com/passage/?search=Proverbs+20%3A4&amp;version=NIV">Proverbs 20:4</a></h4>
+<p>"Sluggards do not plow in season; so at harvest time they look but find nothing."</p>
+<h4 class="atx" id="galatians-26"><a href="https://www.biblegateway.com/passage/?search=Galatians+2%3A6&amp;version=NIV">Galatians 2:6</a></h4>
+<p>"As for those who were held in high esteem—whatever they were makes no difference to me; God does not show favoritism—they added nothing to my message."</p>
+<h4 class="atx" id="james-317"><a href="https://www.biblegateway.com/passage/?search=James+3%3A17&amp;version=NIV">James 3:17</a></h4>
+<p>"But the wisdom that comes from heaven is first of all pure; then peace-loving, considerate, submissive, full of mercy and good fruit, impartial and sincere."</p>
+<h4 class="atx" id="jude-117-23"><a href="https://www.biblegateway.com/passage/?search=Jude+1%3A17-23&amp;version=NIV">Jude 1:17-23</a></h4>
+<p>"But, dear friends, remember what the apostles of our Lord Jesus Christ foretold. They said to you, 'In the last times there will be scoffers who will follow their own ungodly desires.' These are the people who divide you, who follow mere natural instincts and do not have the Spirit. But you, dear friends, by building yourselves up in your most holy faith and praying in the Holy Spirit, keep yourselves in God's love as you wait for the mercy of our Lord Jesus Christ to bring you to eternal life. Be merciful to those who doubt; save others by snatching them from the fire; to others show mercy, mixed with fear—hating even the clothing stained by corrupted flesh."</p>
+<h4 class="atx" id="1-john-51-15"><a href="https://www.biblegateway.com/passage/?search=1+John+5%3A1-15&amp;version=NIV">1 John 5:1-15</a></h4>
+<p>"Everyone who believes that Jesus is the Christ is born of God, and everyone who loves the father loves his child as well. This is how we know that we love the children of God: by loving God and carrying out his commands. ... And this is the testimony: God has given us eternal life, and this life is in his Son. Whoever has the Son has life; whoever does not have the Son of God does not have life."</p>
+<h4 class="atx" id="1-john-46"><a href="https://www.biblegateway.com/passage/?search=1+John+4%3A6&amp;version=NIV">1 John 4:6</a></h4>
+<p>"We are from God, and whoever knows God listens to us; but whoever is not from God does not listen to us. This is how we recognize the Spirit of truth and the spirit of falsehood."</p>
+<h4 class="atx" id="1-john-21-6"><a href="https://www.biblegateway.com/passage/?search=1+John+2%3A1-6&amp;version=NIV">1 John 2:1-6</a></h4>
+<p>"My dear children, I write this to you so that you will not sin. But if anybody does sin, we have an advocate with the Father—Jesus Christ, the Righteous One. He is the atoning sacrifice for our sins, and not only for ours but also for the sins of the whole world. We know that we have come to know him if we keep his commands. Whoever says, 'I know him,' but does not do what he commands is a liar, and the truth is not in that person. But if anyone obeys his word, love for God is truly made complete in them. This is how we know we are in him: Whoever claims to live in him must live as Jesus did."</p>
+<h4 class="atx" id="1-john-15-10"><a href="https://www.biblegateway.com/passage/?search=1+John+1%3A5-10&amp;version=NIV">1 John 1:5-10</a></h4>
+<p>"This is the message we have heard from him and declare to you: God is light; in him there is no darkness at all. If we claim to have fellowship with him and yet walk in the darkness, we lie and do not live out the truth. But if we walk in the light, as he is in the light, we have fellowship with one another, and the blood of Jesus, his Son, purifies us from all sin. If we claim to be without sin, we deceive ourselves and the truth is not in us. If we confess our sins, he is faithful and just and will forgive us our sins and purify us from all unrighteousness. If we claim we have not sinned, we make him out to be a liar and his word is not in us."</p>
+<h4 class="atx" id="2-peter-13-8"><a href="https://www.biblegateway.com/passage/?search=2+Peter+1%3A3-8&amp;version=NIV">2 Peter 1:3-8</a></h4>
+<p>"His divine power has given us everything we need for a godly life through our knowledge of him who called us by his own glory and goodness. Through these he has given us his very great and precious promises, so that through them you may participate in the divine nature, having escaped the corruption in the world caused by evil desires. For this very reason, make every effort to add to your faith goodness; and to goodness, knowledge; and to knowledge, self-control; and to self-control, perseverance; and to perseverance, godliness; and to godliness, mutual affection; and to mutual affection, love. For if you possess these qualities in increasing measure, they will keep you from being ineffective and unproductive in your knowledge of our Lord Jesus Christ."</p>
+<h4 class="atx" id="1-peter-58-11"><a href="https://www.biblegateway.com/passage/?search=1+Peter+5%3A8-11&amp;version=NIV">1 Peter 5:8-11</a></h4>
+<p>"Be alert and of sober mind. Your enemy the devil prowls around like a roaring lion looking for someone to devour. Resist him, standing firm in the faith, because you know that the family of believers throughout the world is undergoing the same kind of sufferings. And the God of all grace, who called you to his eternal glory in Christ, after you have suffered a little while, will himself restore you and make you strong, firm and steadfast. To him be the power for ever and ever. Amen."</p>
+<h4 class="atx" id="1-peter-52-7"><a href="https://www.biblegateway.com/passage/?search=1+Peter+5%3A2-7&amp;version=NIV">1 Peter 5:2-7</a></h4>
+<p>"Be shepherds of God's flock that is under your care, watching over them—not because you must, but because you are willing, as God wants you to be; not pursuing dishonest gain, but eager to serve; not lording it over those entrusted to you, but being examples to the flock. And when the Chief Shepherd appears, you will receive the crown of glory that will never fade away. In the same way, you who are younger, submit yourselves to your elders. All of you, clothe yourselves with humility toward one another, because, 'God opposes the proud but shows favor to the humble.' Humble yourselves, therefore, under God's mighty hand, that he may lift you up in due time. Cast all your anxiety on him because he cares for you."</p>
+<h4 class="atx" id="1-peter-52"><a href="https://www.biblegateway.com/passage/?search=1+Peter+5%3A2&amp;version=NIV">1 Peter 5:2</a></h4>
+<p>"Be shepherds of God's flock that is under your care, watching over them—not because you must, but because you are willing, as God wants you to be; not pursuing dishonest gain, but eager to serve."</p>
+<h4 class="atx" id="1-timothy-614-16"><a href="https://www.biblegateway.com/passage/?search=1+Timothy+6%3A14-16&amp;version=NIV">1 Timothy 6:14-16</a></h4>
+<p>"to keep this command without spot or blame until the appearing of our Lord Jesus Christ, which God will bring about in his own time—God, the blessed and only Ruler, the King of kings and Lord of lords, who alone is immortal and who lives in unapproachable light, whom no one has seen or can see. To him be honor and might forever. Amen."</p>
+<h4 class="atx" id="1-corinthians-56-8"><a href="https://www.biblegateway.com/passage/?search=1+Corinthians+5%3A6-8&amp;version=NIV">1 Corinthians 5:6-8</a></h4>
+<p>"Your boasting is not good. Don't you know that a little yeast leavens the whole batch of dough? Get rid of the old yeast, so that you may be a new unleavened batch—as you really are. For Christ, our Passover lamb, has been sacrificed. Therefore let us keep the Festival, not with the old bread leavened with malice and wickedness, but with the unleavened bread of sincerity and truth."</p>
+<h4 class="atx" id="romans-1219"><a href="https://www.biblegateway.com/passage/?search=Romans+12%3A19&amp;version=NIV">Romans 12:19</a></h4>
+<p>"Do not take revenge, my dear friends, but leave room for God's wrath, for it is written: 'It is mine to avenge; I will repay,' says the Lord."</p>
+<h4 class="atx" id="isaiah-2610"><a href="https://www.biblegateway.com/passage/?search=Isaiah+26%3A10&amp;version=NIV">Isaiah 26:10</a></h4>
+<p>"But when grace is shown to the wicked, they do not learn righteousness; even in a land of uprightness they go on doing evil and do not regard the majesty of the Lord."</p>
+<h4 class="atx" id="psalm-9114-16"><a href="https://www.biblegateway.com/passage/?search=Psalm+91%3A14-16&amp;version=NIV">Psalm 91:14-16</a></h4>
+<p>"'Because he loves me,' says the Lord, 'I will rescue him; I will protect him, for he acknowledges my name. He will call on me, and I will answer him; I will be with him in trouble, I will deliver him and honor him. With long life I will satisfy him and show him my salvation.'"</p>
+<h4 class="atx" id="psalm-9114"><a href="https://www.biblegateway.com/passage/?search=Psalm+91%3A14&amp;version=NIV">Psalm 91:14</a></h4>
+<p>"'Because he loves me,' says the Lord, 'I will rescue him; I will protect him, for he acknowledges my name.'"</p>
+<h4 class="atx" id="matthew-1037-42"><a href="https://www.biblegateway.com/passage/?search=Matthew+10%3A37-42&amp;version=NIV">Matthew 10:37-42</a></h4>
+<p>"Anyone who loves their father or mother more than me is not worthy of me; anyone who loves their son or daughter more than me is not worthy of me. Whoever does not take up their cross and follow me is not worthy of me. Whoever finds their life will lose it, and whoever loses their life for my sake will find it. Anyone who welcomes you welcomes me, and anyone who welcomes me welcomes the one who sent me. Whoever welcomes a prophet as a prophet will receive a prophet's reward, and whoever welcomes a righteous person as a righteous person will receive a righteous person's reward. And if anyone gives even a cup of cold water to one of these little ones who is my disciple, truly I tell you, that person will certainly not lose their reward."</p>
+<h4 class="atx" id="2-kings-113"><a href="https://www.biblegateway.com/passage/?search=2+Kings+1%3A13&amp;version=NIV">2 Kings 1:13</a></h4>
+<p>"So the king sent a third captain with his fifty men. This third captain went up and fell on his knees before Elijah. 'Man of God,' he begged, 'please have respect for my life and the lives of these fifty men, your servants!'"</p>
+<h4 class="atx" id="2-timothy-12"><a href="https://www.biblegateway.com/passage/?search=2+Timothy+1%3A2&amp;version=NIV">2 Timothy 1:2</a></h4>
+<p>"To Timothy, my dear son: Grace, mercy and peace from God the Father and Christ Jesus our Lord."</p>
+<h4 class="atx" id="john-519-21"><a href="https://www.biblegateway.com/passage/?search=John+5%3A19-21&amp;version=NIV">John 5:19-21</a></h4>
+<p>"Jesus gave them this answer: 'Very truly I tell you, the Son can do nothing by himself; he can do only what he sees his Father doing, because whatever the Father does the Son also does. For the Father loves the Son and shows him all he does. Yes, and he will show him even greater works than these, so that you will be amazed.'"</p>
+<h4 class="atx" id="philippians-421-23"><a href="https://www.biblegateway.com/passage/?search=Philippians+4%3A21-23&amp;version=NIV">Philippians 4:21-23</a></h4>
+<p>"Greet all God's people in Christ Jesus. The brothers and sisters who are with me send greetings. All God's people here send you greetings, especially those who belong to Caesar's household. The grace of the Lord Jesus Christ be with your spirit. Amen."</p>
+<h4 class="atx" id="psalm-441-2"><a href="https://www.biblegateway.com/passage/?search=Psalm+44%3A1-2&amp;version=NIV">Psalm 44:1-2</a></h4>
+<p>"We have heard it with our ears, O God; our ancestors have told us what you did in their days, in days long ago. With your hand you drove out the nations and planted our ancestors; you crushed the peoples and made our ancestors flourish."</p>
+<h4 class="atx" id="james-512"><a href="https://www.biblegateway.com/passage/?search=James+5%3A12&amp;version=NIV">James 5:12</a></h4>
+<p>"But above all, my brothers and sisters, do not swear—not by heaven or by earth or by anything else. All you need to say is a simple 'Yes' or 'No.' Otherwise you will be condemned."</p>
+<h4 class="atx" id="james-113-18"><a href="https://www.biblegateway.com/passage/?search=James+1%3A13-18&amp;version=NIV">James 1:13-18</a></h4>
+<p>"When tempted, no one should say, 'God is tempting me.' For God cannot be tempted by evil, nor does he tempt anyone; but each person is tempted when they are dragged away by their own evil desire and enticed. Then, after desire has conceived, it gives birth to sin; and sin, when it is full-grown, gives birth to death. Don't be deceived, my dear brothers and sisters. Every good and perfect gift is from above, coming down from the Father of the heavenly lights, who does not change like shifting shadows. He chose to give us birth through the word of truth, that we might be a kind of firstfruits of all he created."</p>
+<h4 class="atx" id="james-119-27"><a href="https://www.biblegateway.com/passage/?search=James+1%3A19-27&amp;version=NIV">James 1:19-27</a></h4>
+<p>"My dear brothers and sisters, take note of this: Everyone should be quick to listen, slow to speak and slow to become angry, because human anger does not produce the righteousness that God desires. Therefore, get rid of all moral filth and the evil that is so prevalent and humbly accept the word planted in you, which can save you. Do not merely listen to the word, and so deceive yourselves. Do what it says. Anyone who listens to the word but does not do what it says is like someone who looks at his face in a mirror and, after looking at himself, goes away and immediately forgets what he looks like. But whoever looks intently into the perfect law that gives freedom, and continues in it—not forgetting what they have heard, but doing it—they will be blessed in what they do. Those who consider themselves religious and yet do not keep a tight rein on their tongues deceive themselves, and their religion is worthless. Religion that God our Father accepts as pure and faultless is this: to look after orphans and widows in their distress and to keep oneself from being polluted by the world."</p>
+<h4 class="atx" id="james-12-15"><a href="https://www.biblegateway.com/passage/?search=James+1%3A2-15&amp;version=NIV">James 1:2-15</a></h4>
+<p>"Consider it pure joy, my brothers and sisters, whenever you face trials of many kinds, because you know that the testing of your faith produces perseverance. Let perseverance finish its work so that you may be mature and complete, not lacking anything. If any of you lacks wisdom, you should ask God, who gives generously to all without finding fault, and it will be given to you. But when you ask, you must believe and not doubt, because the one who doubts is like a wave of the sea, blown and tossed by the wind. That person should not expect to receive anything from the Lord. Such a person is double-minded and unstable in all they do. Blessed is the one who perseveres under trial because, having stood the test, that person will receive the crown of life that the Lord has promised to those who love him. When tempted, no one should say, 'God is tempting me.' For God cannot be tempted by evil, nor does he tempt anyone; but each person is tempted when they are dragged away by their own evil desire and enticed. Then, after desire has conceived, it gives birth to sin; and sin, when it is full-grown, gives birth to death."</p>
+<h4 class="atx" id="1-john-48"><a href="https://www.biblegateway.com/passage/?search=1+John+4%3A8&amp;version=NIV">1 John 4:8</a></h4>
+<p>"Whoever does not love does not know God, because God is love."</p>
+<h4 class="atx" id="john-71"><a href="https://www.biblegateway.com/passage/?search=John+7%3A1&amp;version=NIV">John 7:1</a></h4>
+<p>"After this, Jesus went around in Galilee. He did not want to go about in Judea because the Jewish leaders there were looking for a way to kill him."</p>
+<h4 class="atx" id="proverbs-11"><a href="https://www.biblegateway.com/passage/?search=Proverbs+1%3A1&amp;version=NIV">Proverbs 1:1</a></h4>
+<p>"The proverbs of Solomon son of David, king of Israel:"</p>
+<h4 class="atx" id="luke-418"><a href="https://www.biblegateway.com/passage/?search=Luke+4%3A18&amp;version=NIV">Luke 4:18</a></h4>
+<p>"The Spirit of the Lord is on me, because he has anointed me to proclaim good news to the poor. He has sent me to proclaim freedom for the prisoners and recovery of sight for the blind, to set the oppressed free."</p>
+<h4 class="atx" id="genesis-81"><a href="https://www.biblegateway.com/passage/?search=Genesis+8%3A1&amp;version=NIV">Genesis 8:1</a></h4>
+<p>"But God remembered Noah and all the wild animals and the livestock that were with him in the ark, and he sent a wind over the earth, and the waters receded."</p>
+<h4 class="atx" id="romans-61"><a href="https://www.biblegateway.com/passage/?search=Romans+6%3A1&amp;version=NIV">Romans 6:1</a></h4>
+<p>"What shall we say, then? Shall we go on sinning so that grace may increase?"</p>
+<h4 class="atx" id="2-peter-31"><a href="https://www.biblegateway.com/passage/?search=2+Peter+3%3A1&amp;version=NIV">2 Peter 3:1</a></h4>
+<p>"Dear friends, this is now my second letter to you. I have written both of them as reminders to stimulate you to wholesome thinking."</p>
+<h4 class="atx" id="john-141"><a href="https://www.biblegateway.com/passage/?search=John+14%3A1&amp;version=NIV">John 14:1</a></h4>
+<p>"Do not let your hearts be troubled. You believe in God; believe also in me."</p>
+<h4 class="atx" id="john-145-6"><a href="https://www.biblegateway.com/passage/?search=John+14%3A5-6&amp;version=NIV">John 14:5-6</a></h4>
+<p>"Thomas said to him, 'Lord, we don't know where you are going, so how can we know the way?' Jesus answered, 'I am the way and the truth and the life. No one comes to the Father except through me.'"</p>
+<h4 class="atx" id="matthew-2237"><a href="https://www.biblegateway.com/passage/?search=Matthew+22%3A37&amp;version=NIV">Matthew 22:37</a></h4>
+<p>"Jesus replied: 'Love the Lord your God with all your heart and with all your soul and with all your mind.'"</p>
+<h4 class="atx" id="luke-916"><a href="https://www.biblegateway.com/passage/?search=Luke+9%3A16&amp;version=NIV">Luke 9:16</a></h4>
+<p>"Taking the five loaves and the two fish and looking up to heaven, he gave thanks and broke them. Then he gave them to the disciples to distribute to the people."</p>
+<h4 class="atx" id="acts-714"><a href="https://www.biblegateway.com/passage/?search=Acts+7%3A14&amp;version=NIV">Acts 7:14</a></h4>
+<p>"After this, Joseph sent for his father Jacob and his whole family, seventy-five in all."</p>
+<h4 class="atx" id="psalm-621-13"><a href="https://www.biblegateway.com/passage/?search=Psalm+62%3A1-13&amp;version=NIV">Psalm 62:1-13</a></h4>
+<p>"Truly my soul finds rest in God; my salvation comes from him. Truly he is my rock and my salvation; he is my fortress, I will never be shaken. ... Yes, my soul, find rest in God; my hope comes from him. Truly he is my rock and my salvation; he is my fortress, I will not be shaken. My salvation and my honor depend on God; he is my mighty rock, my refuge. Trust in him at all times, you people; pour out your hearts to him, for God is our refuge."</p>
+<h4 class="atx" id="ephesians-610-20"><a href="https://www.biblegateway.com/passage/?search=Ephesians+6%3A10-20&amp;version=NIV">Ephesians 6:10-20</a></h4>
+<p>"Finally, be strong in the Lord and in his mighty power. Put on the full armor of God, so that you can take your stand against the devil's schemes. For our struggle is not against flesh and blood, but against the rulers, against the authorities, against the powers of this dark world and against the spiritual forces of evil in the heavenly realms. Therefore put on the full armor of God, so that when the day of evil comes, you may be able to stand your ground, and after you have done everything, to stand. Stand firm then, with the belt of truth buckled around your waist, with the breastplate of righteousness in place, and with your feet fitted with the readiness that comes from the gospel of peace. In addition to all this, take up the shield of faith, with which you can extinguish all the flaming arrows of the evil one. Take the helmet of salvation and the sword of the Spirit, which is the word of God. And pray in the Spirit on all occasions with all kinds of prayers and requests. With this in mind, be alert and always keep on praying for all the Lord's people."</p>
+<h4 class="atx" id="2-corinthians-104-6"><a href="https://www.biblegateway.com/passage/?search=2+Corinthians+10%3A4-6&amp;version=NIV">2 Corinthians 10:4-6</a></h4>
+<p>"The weapons we fight with are not the weapons of the world. On the contrary, they have divine power to demolish strongholds. We demolish arguments and every pretension that sets itself up against the knowledge of God, and we take captive every thought to make it obedient to Christ. And we will be ready to punish every act of disobedience, once your obedience is complete."</p>
+<h4 class="atx" id="acts-232-33"><a href="https://www.biblegateway.com/passage/?search=Acts+2%3A32-33&amp;version=NIV">Acts 2:32-33</a></h4>
+<p>"God has raised this Jesus to life, and we are all witnesses of it. Exalted to the right hand of God, he has received from the Father the promised Holy Spirit and has poured out what you now see and hear."</p>
+<h4 class="atx" id="acts-233"><a href="https://www.biblegateway.com/passage/?search=Acts+2%3A33&amp;version=NIV">Acts 2:33</a></h4>
+<p>"Exalted to the right hand of God, he has received from the Father the promised Holy Spirit and has poured out what you now see and hear."</p>
+<h4 class="atx" id="john-424"><a href="https://www.biblegateway.com/passage/?search=John+4%3A24&amp;version=NIV">John 4:24</a></h4>
+<p>"God is spirit, and his worshipers must worship in the Spirit and in truth."</p>
+<h4 class="atx" id="1-peter-12"><a href="https://www.biblegateway.com/passage/?search=1+Peter+1%3A2&amp;version=NIV">1 Peter 1:2</a></h4>
+<p>"who have been chosen according to the foreknowledge of God the Father, through the sanctifying work of the Spirit, to be obedient to Jesus Christ and sprinkled with his blood: Grace and peace be yours in abundance."</p>
+<h4 class="atx" id="deuteronomy-321-52"><a href="https://www.biblegateway.com/passage/?search=Deuteronomy+32%3A1-52&amp;version=NIV">Deuteronomy 32:1-52</a></h4>
+<p>This chapter is a song of Moses, recounting God's faithfulness and the people's unfaithfulness. It speaks of God's justice, mercy, and sovereignty.</p>
+<h4 class="atx" id="john-1031-36"><a href="https://www.biblegateway.com/passage/?search=John+10%3A31-36&amp;version=NIV">John 10:31-36</a></h4>
+<p>"Again his Jewish opponents picked up stones to stone him, but Jesus said to them, 'I have shown you many good works from the Father. For which of these do you stone me?' 'We are not stoning you for any good work,' they replied, 'but for blasphemy, because you, a mere man, claim to be God.' Jesus answered them, 'Is it not written in your Law, 'I have said you are "gods"'? If he called them 'gods,' to whom the word of God came—and Scripture cannot be set aside—what about the one whom the Father set apart as his very own and sent into the world? Why then do you accuse me of blasphemy because I said, 'I am God's Son'?'"</p>
+<h4 class="atx" id="john-1022-30"><a href="https://www.biblegateway.com/passage/?search=John+10%3A22-30&amp;version=NIV">John 10:22-30</a></h4>
+<p>"Then came the Festival of Dedication at Jerusalem. It was winter, and Jesus was in the temple courts walking in Solomon's Colonnade. The Jews who were there gathered around him, saying, 'How long will you keep us in suspense? If you are the Messiah, tell us plainly.' Jesus answered, 'I did tell you, but you do not believe. The works I do in my Father's name testify about me, but you do not believe because you are not my sheep. My sheep listen to my voice; I know them, and they follow me. I give them eternal life, and they shall never perish; no one will snatch them out of my hand. My Father, who has given them to me, is greater than all; no one can snatch them out of my Father's hand. I and the Father are one.'"</p>
+<h4 class="atx" id="john-839"><a href="https://www.biblegateway.com/passage/?search=John+8%3A39&amp;version=NIV">John 8:39</a></h4>
+<p>"'Abraham is our father,' they answered. 'If you were Abraham's children,' said Jesus, 'then you would do the things Abraham did.'"</p>
+<h4 class="atx" id="1-john-42"><a href="https://www.biblegateway.com/passage/?search=1+John+4%3A2&amp;version=NIV">1 John 4:2</a></h4>
+<p>"This is how you can recognize the Spirit of God: Every spirit that acknowledges that Jesus Christ has come in the flesh is from God."</p>
+<h4 class="atx" id="psalm-378"><a href="https://www.biblegateway.com/passage/?search=Psalm+37%3A8&amp;version=NIV">Psalm 37:8</a></h4>
+<p>"Refrain from anger and turn from wrath; do not fret—it leads only to evil."</p>
+<h4 class="atx" id="romans-24"><a href="https://www.biblegateway.com/passage/?search=Romans+2%3A4&amp;version=NIV">Romans 2:4</a></h4>
+<p>"Or do you show contempt for the riches of his kindness, forbearance and patience, not realizing that God's kindness is intended to lead you to repentance?"</p>
+<h4 class="atx" id="hebrews-924-26"><a href="https://www.biblegateway.com/passage/?search=Hebrews+9%3A24-26&amp;version=NIV">Hebrews 9:24-26</a></h4>
+<p>"For Christ did not enter a sanctuary made with human hands that was only a copy of the true one; he entered heaven itself, now to appear for us in God's presence. Nor did he enter heaven to offer himself again and again, the way the high priest enters the Most Holy Place every year with blood that is not his own. Otherwise Christ would have had to suffer many times since the creation of the world. But he has appeared once for all at the culmination of the ages to do away with sin by the sacrifice of himself."</p>
+<h4 class="atx" id="hebrews-726-28"><a href="https://www.biblegateway.com/passage/?search=Hebrews+7%3A26-28&amp;version=NIV">Hebrews 7:26-28</a></h4>
+<p>"Such a high priest truly meets our need—one who is holy, blameless, pure, set apart from sinners, exalted above the heavens. Unlike the other high priests, he does not need to offer sacrifices day after day, first for his own sins, and then for the sins of the people. He sacrificed for their sins once for all when he offered himself. For the law appoints as high priests men in all their weakness; but the oath, which came after the law, appointed the Son, who has been made perfect forever."</p>
+<h4 class="atx" id="hebrews-64-6"><a href="https://www.biblegateway.com/passage/?search=Hebrews+6%3A4-6&amp;version=NIV">Hebrews 6:4-6</a></h4>
+<p>"It is impossible for those who have once been enlightened, who have tasted the heavenly gift, who have shared in the Holy Spirit, who have tasted the goodness of the word of God and the powers of the coming age and who have fallen away, to be brought back to repentance. To their loss they are crucifying the Son of God all over again and subjecting him to public disgrace."</p>
+<h4 class="atx" id="psalm-231-6"><a href="https://www.biblegateway.com/passage/?search=Psalm+23%3A1-6&amp;version=NIV">Psalm 23:1-6</a></h4>
+<p>"The Lord is my shepherd, I lack nothing. He makes me lie down in green pastures, he leads me beside quiet waters, he refreshes my soul. He guides me along the right paths for his name's sake. Even though I walk through the darkest valley, I will fear no evil, for you are with me; your rod and your staff, they comfort me. You prepare a table before me in the presence of my enemies. You anoint my head with oil; my cup overflows. Surely your goodness and love will follow me all the days of my life, and I will dwell in the house of the Lord forever."</p>
+<h4 class="atx" id="psalm-279"><a href="https://www.biblegateway.com/passage/?search=Psalm+27%3A9&amp;version=NIV">Psalm 27:9</a></h4>
+<p>"Do not hide your face from me, do not turn your servant away in anger; you have been my helper. Do not reject me or forsake me, God my Savior."</p>
+<h4 class="atx" id="psalm-271"><a href="https://www.biblegateway.com/passage/?search=Psalm+27%3A1&amp;version=NIV">Psalm 27:1</a></h4>
+<p>"The Lord is my light and my salvation—whom shall I fear? The Lord is the stronghold of my life—of whom shall I be afraid?"</p>
+<h4 class="atx" id="mark-1125"><a href="https://www.biblegateway.com/passage/?search=Mark+11%3A25&amp;version=NIV">Mark 11:25</a></h4>
+<p>"And when you stand praying, if you hold anything against anyone, forgive them, so that your Father in heaven may forgive you your sins."</p>
+<h4 class="atx" id="james-310-11"><a href="https://www.biblegateway.com/passage/?search=James+3%3A10-11&amp;version=NIV">James 3:10-11</a></h4>
+<p>"Out of the same mouth come praise and cursing. My brothers and sisters, this should not be. Can both fresh water and salt water flow from the same spring?"</p>
+<h4 class="atx" id="psalm-7323-26"><a href="https://www.biblegateway.com/passage/?search=Psalm+73%3A23-26&amp;version=NIV">Psalm 73:23-26</a></h4>
+<p>"Yet I am always with you; you hold me by my right hand. You guide me with your counsel, and afterward you will take me into glory. Whom have I in heaven but you? And earth has nothing I desire besides you. My flesh and my heart may fail, but God is the strength of my heart and my portion forever."</p>
+<h4 class="atx" id="1-corinthians-117-9"><a href="https://www.biblegateway.com/passage/?search=1+Corinthians+11%3A7-9&amp;version=NIV">1 Corinthians 11:7-9</a></h4>
+<p>"A man ought not to cover his head, since he is the image and glory of God; but woman is the glory of man. For man did not come from woman, but woman from man; neither was man created for woman, but woman for man."</p>
+<h4 class="atx" id="1-corinthians-115"><a href="https://www.biblegateway.com/passage/?search=1+Corinthians+11%3A5&amp;version=NIV">1 Corinthians 11:5</a></h4>
+<p>"But every woman who prays or prophesies with her head uncovered dishonors her head—it is the same as having her head shaved."</p>
+<h4 class="atx" id="1-corinthians-715-16"><a href="https://www.biblegateway.com/passage/?search=1+Corinthians+7%3A15-16&amp;version=NIV">1 Corinthians 7:15-16</a></h4>
+<p>"But if the unbeliever leaves, let it be so. The brother or the sister is not bound in such circumstances; God has called us to live in peace. How do you know, wife, whether you will save your husband? Or, how do you know, husband, whether you will save your wife?"</p>
+<h4 class="atx" id="james-43"><a href="https://www.biblegateway.com/passage/?search=James+4%3A3&amp;version=NIV">James 4:3</a></h4>
+<p>"When you ask, you do not receive, because you ask with wrong motives, that you may spend what you get on your pleasures."</p>
+<h4 class="atx" id="john-1334-35"><a href="https://www.biblegateway.com/passage/?search=John+13%3A34-35&amp;version=NIV">John 13:34-35</a></h4>
+<p>"&lt;34&gt; A new commandment I give unto you, That ye love one another; as I have loved you, that ye also love one another. &lt;35&gt; By this shall all men know that ye are my disciples, if ye have love one to another."</p>
+<h4 class="atx" id="romans-117"><a href="https://www.biblegateway.com/passage/?search=Romans+1%3A17&amp;version=KJV">Romans 1:17</a></h4>
+<p>"For therein is the righteousness of God revealed from faith to faith: as it is written, The just shall live by faith."</p>
+<h4 class="atx" id="romans-53-5"><a href="https://www.biblegateway.com/passage/?search=Romans+5%3A3-5&amp;version=NIV">Romans 5:3-5</a></h4>
+<p>"Not only so, but we also rejoice in our sufferings, because we know that suffering produces perseverance; perseverance, character; and character, hope. And hope does not disappoint us, because God has poured out his love into our hearts by the Holy Spirit, whom he has given us."</p>
+<h4 class="atx" id="romans-109-10"><a href="https://www.biblegateway.com/passage/?search=Romans+10%3A9-10&amp;version=NIV">Romans 10:9-10</a></h4>
+<p>"If you declare with your mouth, 'Jesus is Lord,' and believe in your heart that God raised him from the dead, you will be saved. For it is with your heart that you believe and are justified, and it is with your mouth that you profess your faith and are saved."</p>
+<h4 class="atx" id="matthew-511"><a href="https://www.biblegateway.com/passage/?search=Matthew+5%3A11&amp;version=NKJV">Matthew 5:11</a></h4>
+<p>"Blessed are you when they revile and persecute you, and say all kinds of evil against you falsely for My sake."</p>
+<h4 class="atx" id="philippians-121"><a href="https://www.biblegateway.com/passage/?search=Philippians+1%3A21&amp;version=NIV">Philippians 1:21</a></h4>
+<p>"For to me, to live is Christ and to die is gain."</p>
+<h4 class="atx" id="john-2022-23"><a href="https://biblehub.com/john/20-22.htm">John 20:22-23</a></h4>
+<p>"Jesus Appears to the Disciples ...21Again Jesus said to them, 'Peace be with you. As the Father has sent Me, so also I am sending you.' 22When He had said this, He breathed on them and said, 'Receive the Holy Spirit. 23If you forgive anyone his sins, they are forgiven; if you withhold forgiveness from anyone, it is withheld.'"</p>
+<h4 class="atx" id="romans-53-5-1"><a href="https://www.biblegateway.com/passage/?search=Romans+5%3A3-5&amp;version=NIV">Romans 5:3-5</a></h4>
+<p>"3 Not only so, but we#### [a] also glory in our sufferings, because we know that suffering produces perseverance; 4 perseverance, character; and character, hope. 5 And hope does not put us to shame, because God's love has been poured out into our hearts through the Holy Spirit, who has been given to us."</p>
+<p><a href="https://www.biblegateway.com/passage/?search=Proverbs+4%3A6&amp;version=NIV">Proverbs 4:6</a></p>
+<p>"Do not forsake wisdom, and she will protect you; love her, and she will watch over you."</p>
+<h4 class="atx" id="john-2023"><a href="https://www.biblegateway.com/passage/?search=John+20%3A23&amp;version=NIV">John 20:23</a></h4>
+<p>"If you forgive the sins of anyone, their sins have been forgiven them; if you retain the sins of anyone, they have been retained."</p>
+<h4 class="atx" id="matthew-1818"><a href="https://www.biblegateway.com/passage/?search=Matthew+18%3A18&amp;version=WEB">Matthew 18:18</a></h4>
+<p>"I solemnly say to you, whatever you forbid on earth must be already forbidden in heaven, and whatever you permit on earth must be already permitted in heaven."</p>
+<h4 class="atx" id="james-15"><a href="https://www.biblegateway.com/passage/?search=James+1%3A5&amp;version=NIV">James 1:5</a></h4>
+<p>"If any of you lacks wisdom, he should ask God, who gives generously to all without finding fault, and it will be given to him."</p>
+<h4 class="atx" id="john-530"><a href="https://www.biblegateway.com/passage/?search=John+5%3A30&amp;version=NIV">John 5:30</a></h4>
+<p>"By myself I can do nothing; I judge only as I hear, and my judgment is just, for I seek not to please myself but him who sent me."</p>
+<h4 class="atx" id="john-519"><a href="https://www.biblegateway.com/passage/?search=John+5%3A19&amp;version=NIV">John 5:19</a></h4>
+<p>"Jesus gave them this answer: 'I tell you the truth, the Son can do nothing by himself; he can do only what he sees his Father doing, because whatever the Father does the Son also does.'"</p>
+<h4 class="atx" id="1-john-39"><a href="https://www.biblegateway.com/passage/?search=1+John+3%3A9&amp;version=KJV">1 John 3:9</a></h4>
+<p>"Whosoever is born of God doth not commit sin; for his seed remaineth in him: and he cannot sin, because he is born of God."</p>
+<h4 class="atx" id="1-john-518"><a href="https://www.biblegateway.com/passage/?search=1+John+5%3A18&amp;version=KJV">1 John 5:18</a></h4>
+<p>"We know that whosoever is born of God sinneth not; but he that is begotten of God keepeth himself, and that wicked one toucheth him not."</p>
+<h4 class="atx" id="romans-323"><a href="https://www.biblegateway.com/passage/?search=Romans+3%3A23&amp;version=NIV">Romans 3:23</a></h4>
+<p>"For all have sinned and fall short of the glory of God."</p>
+<h4 class="atx" id="galatians-219-20-1"><a href="https://www.biblegateway.com/passage/?search=Galatians+2%3A19-20&amp;version=NIV">Galatians 2:19-20</a></h4>
+<p>"For through the law I died to the law so that I might live for God. I have been crucified with Christ and I no longer live, but Christ lives in me. The life I now live in the body, I live by faith in the Son of God, who loved me and gave himself for me."</p>
+<h4 class="atx" id="romans-53-5-2"><a href="https://www.biblegateway.com/passage/?search=Romans+5%3A3-5&amp;version=NIV">Romans 5:3-5</a></h4>
+<p>"Not only that, but we rejoice in our sufferings, knowing that suffering produces endurance, and endurance produces character, and character produces hope, and hope does not put us to shame, because God's love has been poured into our hearts through the Holy Spirit who has been given to us."</p>
+<h4 class="atx" id="isaiah-535"><a href="https://www.biblegateway.com/passage/?search=Isaiah+53%3A5&amp;version=NIV">Isaiah 53:5</a></h4>
+<p>"But he was pierced for our transgressions; he was crushed for our iniquities; upon him was the chastisement that brought us peace, and with his wounds we are healed."</p>
+<h4 class="atx" id="1-corinthians-1522"><a href="https://www.biblegateway.com/passage/?search=1+Corinthians+15%3A22&amp;version=NIV">1 Corinthians 15:22</a></h4>
+<p>"For as in Adam all die, so in Christ all will be made alive."</p>
+<h4 class="atx" id="colossians-32"><a href="https://www.biblegateway.com/passage/?search=Colossians+3%3A2&amp;version=NIV">Colossians 3:2</a></h4>
+<p>"Set your mind on things above, not on things on the earth."</p>
+<h4 class="atx" id="proverbs-423"><a href="https://www.biblegateway.com/passage/?search=Proverbs+4%3A23&amp;version=NIV">Proverbs 4:23</a></h4>
+<p>"Carefully guard your thoughts because they are the source of true life."</p>
+<h4 class="atx" id="ephesians-618"><a href="https://www.biblegateway.com/passage/?search=Ephesians+6%3A18&amp;version=NIV">Ephesians 6:18</a></h4>
+<p>"And pray in the Spirit on all occasions with all kinds of prayers and requests. With this in mind, be alert and always keep on praying for all the Lord's people."</p>
+<h4 class="atx" id="proverbs-425-27"><a href="https://www.biblegateway.com/passage/?search=Proverbs+4%3A25-27&amp;version=TPT">Proverbs 4:25-27</a></h4>
+<p>"Set your gaze on the path before you. With fixed purpose, looking straight ahead, ignore life's distractions. Watch where you're going! Stick to the path of truth, and the road will be safe and smooth before you. Don't allow yourself to be sidetracked for even a moment or take the detour that leads to darkness."</p>
+<h4 class="atx" id="john-145-6-1"><a href="https://www.biblegateway.com/passage/?search=John+14%3A5-6&amp;version=NIV">John 14:5-6</a></h4>
+<p>"Thomas said to him, 'Lord, we don't know where you are going, so how can we know the way?' Jesus answered, 'I am the way and the truth and the life. No one comes to the Father except through me.'"</p>
+<h4 class="atx" id="acts-1728"><a href="https://www.biblegateway.com/passage/?search=Acts+17%3A28&amp;version=NIV">Acts 17:28</a></h4>
+<p>"'For in him we live and move and have our being.' As some of your own poets have said, 'We are his offspring.'"</p>
+<h4 class="atx" id="romans-510"><a href="https://www.biblegateway.com/passage/?search=Romans+5%3A10&amp;version=ESV">Romans 5:10</a></h4>
+<p>"For if while we were enemies we were reconciled to God by the death of his Son, much more, now that we are reconciled, shall we be saved by his life."</p>
+<h4 class="atx" id="galatians-522-23"><a href="https://www.biblegateway.com/passage/?search=Galatians+5%3A22-23&amp;version=NIV">Galatians 5:22-23</a></h4>
+<p>"But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control; against such things there is no law."</p>
+<h4 class="atx" id="job-29-13"><a href="https://www.biblegateway.com/passage/?search=Job+2%3A9-13&amp;version=ERV">Job 2:9-13</a></h4>
+<p>"His wife said to him, 'Are you still holding on to your faith? Why don't you just curse God and die!' Job answered, 'You sound like one of those fools on the street corner! How can we accept all the good things that God gives us and not accept the problems?' So even after all that happened to Job, he did not sin. He did not accuse God of doing anything wrong. 11Job's three friends heard about all the bad things that happened to him, so Eliphaz came from Teman, Bildad from Shuah, and Zophar from Naamah. They met together and went to comfort Job and show him their sympathy. 12But his friends didn't even recognize him when they first saw him in the distance! They began to cry loudly. They tore their clothes and threw dirt in the air over their heads to show how sad they were. 13Then they sat on the ground with Job for seven days and seven</p>
+<h4 class="atx" id="psalm-5522"><a href="https://www.biblegateway.com/passage/?search=Psalm+55%3A22&amp;version=ESV">Psalm 55:22</a></h4>
+<p>"Cast your burden on the Lord, and he will sustain you; he will never permit the righteous to be shaken."</p>
+<h4 class="atx" id="isaiah-4110"><a href="https://www.biblegateway.com/passage/?search=Isaiah+41%3A10&amp;version=ESV">Isaiah 41:10</a></h4>
+<p>"Fear not, for I am with you; be not dismayed, for I am your God; I will strengthen you, I will help you, I will uphold you with my righteous right hand."</p>
+<h4 class="atx" id="philippians-45-1"><a href="https://www.biblegateway.com/passage/?search=Philippians+4%3A5&amp;version=NIV">Philippians 4:5</a></h4>
+<p>"Let your gentleness be known to everyone. The Lord is at hand."</p>
+<h4 class="atx" id="james-310-11-1"><a href="https://www.biblegateway.com/passage/?search=James+3%3A10-11&amp;version=ESV">James 3:10-11</a></h4>
+<p>"From the same mouth come blessing and cursing. My brothers, these things ought not to be so. Does a spring pour forth from the same opening both fresh and salt water?"</p>
+<h4 class="atx" id="proverbs-1314"><a href="https://www.biblegateway.com/passage/?search=Proverbs+13%3A14&amp;version=NIV">Proverbs 13:14</a></h4>
+<p>"The teaching of the wise is a fountain of life, that one may turn away from the snares of death."</p>
+<h4 class="atx" id="proverbs-169"><a href="https://www.biblegateway.com/passage/?search=Proverbs+16%3A9&amp;version=NIV">Proverbs 16:9</a></h4>
+<p>"In their hearts humans plan their course, but the Lord establishes their steps."</p>
+<p><a href="https://www.biblegateway.com/passage/?search=Ecclesiastes+3%3A19-21&amp;version=NIV">Ecclesiastes 3:19-21</a></p>
+<p>19&nbsp;Surely the fate of human beings&nbsp;is like that of the animals; the same fate awaits them both: As one dies, so dies the other. All have the same breath <sup>[Or Spirit]</sup>; humans have no advantage over animals. Everything is meaningless.&nbsp;20&nbsp;All go to the same place; all come from dust, and to dust all return.&nbsp;21&nbsp;Who knows if the human spirit rises upward&nbsp;and if the spirit of the animal goes down into the earth?”</p>
+<p><a href="https://www.biblegateway.com/passage/?search=2+Corinthians+4%3A18&amp;version=NIV">2 Corinthians 4:18</a></p>
+<p>"So we fix our eyes not on what is seen, but on what is unseen, since what is seen is temporary, but what is unseen is eternal."</p>
+<h4 class="atx" id="1-john-512"><a href="https://www.biblegateway.com/passage/?search=1+John+5%3A12&amp;version=NIV">1 John 5:12</a></h4>
+<p>"He who has the Son has life; he who does not have the Son of God does not have life."</p>
+<h4 class="atx" id="romans-122"><a href="https://www.biblegateway.com/passage/?search=Romans+12%3A2&amp;version=NIV">Romans 12:2</a></h4>
+<p>"Do not conform to the pattern of this world, but be transformed by the renewing of your mind. Then you will be able to test and approve what God's will is—his good, pleasing and perfect will."</p>
+<h4 class="atx" id="john-1722"><a href="https://www.biblegateway.com/passage/?search=John+17%3A22&amp;version=KJV">John 17:22</a></h4>
+<p>"And the glory which thou hast given me I have given unto them; that they may be one, even as we [are] one"</p>
+<h4 class="atx" id="isaiah-535-1"><a href="https://www.biblegateway.com/passage/?search=Isaiah+53%3A5&amp;version=NIV">Isaiah 53:5</a></h4>
+<p>"But he was pierced for our transgressions; he was crushed for our iniquities; upon him was the chastisement that brought us peace, and with his wounds we are healed."</p>
+<h4 class="atx" id="deuteronomy-1012-13"><a href="https://www.biblegateway.com/passage/?search=Deuteronomy+10%3A12-13&amp;version=NIV">Deuteronomy 10:12-13</a></h4>
+<p>"And now, Israel, what does the Lord your God ask of you but to fear the Lord your God, to walk in obedience to him, to love him, to serve the Lord your God with all your heart and with all your soul, and to observe the Lord's commands and decrees that I am giving you today for your own good?"</p>
+<h4 class="atx" id="1-john-44"><a href="https://www.biblegateway.com/passage/?search=1+John+4%3A4&amp;version=NIV">1 John 4:4</a></h4>
+<p>"Little children, you are from God and have overcome them, for he who is in you is greater than he who is in the world."</p>
+<h4 class="atx" id="ephesians-54"><a href="https://www.biblegateway.com/passage/?search=Ephesians+5%3A4&amp;version=NIV">Ephesians 5:4</a></h4>
+<p>"Nor should there be obscenity, foolish talk or coarse joking, which are out of place, but rather thanksgiving."</p>
+<h2 class="atx" id="side-mentions--percepts-that-are-interesting--from-the-quran">Side mentions / percepts that are interesting ( from the Quran)</h2>
+<h3 class="atx" id="sura-1121-4"><a href="https://www.biblegateway.com/passage/?search=Sura+112%3A1-4&amp;version=Yusuf_Ali">Sura 112:1-4</a></h3>
+<p>"Say: He is God, the One and Only; God, the Eternal, Absolute; He begetteth not, nor is He begotten; And there is none like unto Him."</p>
+</article>
+</body>
+</html>
