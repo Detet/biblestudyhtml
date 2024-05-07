@@ -1,4 +1,5 @@
-﻿# Detet's Bible Study (from years ago)
+# Detet's Bible Study (from years ago)
+
 This is my thorough Bible study I made years ago, although it was in Swedish. With AI I could easily fix a translated English version of the selected passages. Let me know if there is any link that is faulty or passage that is not correct (as AI can hallucinate, however, you should be able to discern if it does. AI is not a literary genius like the authors of these timeless texts.)
 
 #### [Hebrews 3:6](<https://www.biblegateway.com/passage/?search=Hebrews+3%3A6&version=NIV>)
@@ -481,9 +482,9 @@ This chapter is a song of Moses, recounting God's faithfulness and the people's 
 
 "In their hearts humans plan their course, but the Lord establishes their steps."
 
-#### [Ecclesiastes 3:19-21](<https://www.biblegateway.com/passage/?search=Ecclesiastes+3%3A19-21&version=NIV>)
+[Ecclesiastes 3:19-21](<https://www.biblegateway.com/passage/?search=Ecclesiastes+3%3A19-21&version=NIV>)
 
-"Surely the fate of human beings is like that of the animals; the same fate awaits them both: As one dies, so dies the other. All have the same breath#### [a]; humans have no advantage over animals. Everything is meaningless. All go to the same place; all come from dust, and to dust all return. Who knows if the human spirit rises upward and if the spirit of the animal goes down into the earth?"
+19 Surely the fate of human beings is like that of the animals; the same fate awaits them both: As one dies, so dies the other. All have the same breath <sup>\[Or Spirit\]</sup>; humans have no advantage over animals. Everything is meaningless. 20 All go to the same place; all come from dust, and to dust all return. 21 Who knows if the human spirit rises upward and if the spirit of the animal goes down into the earth?”
 
 [2 Corinthians 4:18](<https://www.biblegateway.com/passage/?search=2+Corinthians+4%3A18&version=NIV>)
 
@@ -499,11 +500,7 @@ This chapter is a song of Moses, recounting God's faithfulness and the people's 
 
 #### [John 17:22](<https://www.biblegateway.com/passage/?search=John+17%3A22&version=KJV>)
 
-"And the glory which thou hast given me I have given unto them; that they may be one, even as we #### [are] one"
-
-[Sura 112:1-4](<https://www.biblegateway.com/passage/?search=Sura+112%3A1-4&version=Yusuf_Ali>)
-
-"Say: He is God, the One and Only; God, the Eternal, Absolute; He begetteth not, nor is He begotten; And there is none like unto Him."
+"And the glory which thou hast given me I have given unto them; that they may be one, even as we [are] one"
 
 #### [Isaiah 53:5](<https://www.biblegateway.com/passage/?search=Isaiah+53%3A5&version=NIV>)
 
@@ -520,3 +517,11 @@ This chapter is a song of Moses, recounting God's faithfulness and the people's 
 #### [Ephesians 5:4](<https://www.biblegateway.com/passage/?search=Ephesians+5%3A4&version=NIV>)
 
 "Nor should there be obscenity, foolish talk or coarse joking, which are out of place, but rather thanksgiving."
+
+
+
+## Side mentions / percepts that are interesting ( from the Quran)
+
+### [Sura 112:1-4](https://www.biblegateway.com/passage/?search=Sura+112%3A1-4&version=Yusuf_Ali)
+
+"Say: He is God, the One and Only; God, the Eternal, Absolute; He begetteth not, nor is He begotten; And there is none like unto Him."
